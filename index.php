@@ -12,7 +12,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- SLICK css -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+                
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
