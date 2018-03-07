@@ -74,7 +74,10 @@ li{
 a{
     text-decoration: none;
 }
-
+.img {
+    display: none;
+    width: 900px;
+}
 
 
 

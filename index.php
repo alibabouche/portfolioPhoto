@@ -37,19 +37,26 @@
         </header>
         <main>
             <section id="slider">
-                <div class="slider">
+                <div class="slider slider-portraits">
                     <?php 
                         foreach($resultPortraits as $resultsPortraits)
                         {
-                            echo ("<div class='img imgPortraits'><img src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
-                        }
+                            echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
+                        }?>
+                        </div>
+                <div class="slider slider-paysages">
+                    <?php 
                         foreach($resultPaysages as $resultsPaysages)
                         {
-                            echo ("<div class='img imgPaysages'><img src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
+                            echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
                         }
+                    ?>
+                        </div>
+                <div class="slider slider-animaux">
+                    <?php
                         foreach($resultAnimaux as $resultsAnimaux)
                         {
-                            echo ("<div class='img imgAnimaux'><img src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
+                            echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
                         }
                     ?>
                 </div>
