@@ -11,30 +11,49 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <!-- SLICK css -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <?php include "connectionPDO.php" ?>
         
         <header>
         <h1>Ali Kh</h1>
         <nav>
             <ul>
-                <li><a href="#">Portrait</a></li>
-                <li><a href="#">Paysage</a></li>
-                <li><a href="#">Animaux</a></li>
+                <li class="Portraits">Portraits</li>
+                <li class="Paysages">Paysages</li>
+                <li class="Animaux">Animaux</li>
             </ul>
         </nav>
         </header>
         <main>
-            <section class="slider">
-                
+            <section id="slider">
+                <div class="slider">
+                    <?php 
+                        foreach($resultPortraits as $resultsPortraits)
+                        {
+                            echo ("<div class='img imgPortraits'><img src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
+                        }
+                        foreach($resultPaysages as $resultsPaysages)
+                        {
+                            echo ("<div class='img imgPaysages'><img src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
+                        }
+                        foreach($resultAnimaux as $resultsAnimaux)
+                        {
+                            echo ("<div class='img imgAnimaux'><img src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
+                        }
+                    ?>
+                </div>
             </section>
         </main>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -48,5 +67,10 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+        <!-- SLICK plugin-->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
     </body>
 </html>
