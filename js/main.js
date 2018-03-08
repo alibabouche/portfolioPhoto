@@ -2,30 +2,34 @@ $(document).ready(function(){
 
 	$(".Portraits").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgPortraits").css({"width" : "900px", "display" : "block"});
+		$(".imgPortraits").css({"height" : "600px", "display" : "block"});
 		$(".slider-portraits").css("display", "block").slick({
 			infinite : true,
-			dots : true
+			fade : true,
+			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
+			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
 		});
 	});
 
 	$(".Paysages").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgPaysages").css({"width" : "900px", "display" : "block"});
+		$(".imgPaysages").css({"height" : "600px", "display" : "block"});
 		$(".slider-paysages").css("display", "block").slick({
 			infinite : true,
-			dots : true
+			fade : true,
+			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
+			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
 		});
 	});
 
 	$(".Animaux").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgAnimaux").css({"width" : "900px", "display" : "block"});
+		$(".imgAnimaux").css({"height" : "600px", "display" : "block"});
 		$(".slider-animaux").css("display", "block").slick({
 			infinite : true,
-			dots : true,
-			centerMode : true
+			fade : true,
+			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
+			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
 		});
 	});
-
 });

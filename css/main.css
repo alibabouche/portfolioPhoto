@@ -76,10 +76,53 @@ a{
 }
 .img {
     display: none;
-    width: 900px;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 10px black;
 }
-
-
+.slick-dots{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    position: absolute;
+    transform: rotate(90deg);
+    right: 0;
+    top: 30vh;
+    z-index: 1000;
+}
+.left{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 0;    
+    top: 30vh;
+    z-index: 1000;
+}
+.contact{
+    position: absolute;
+    bottom: 0;
+}
+form{
+    text-align: center;
+}
+form fieldset{
+    text-align: center;
+}
+form fieldset legend{
+    margin: 0 auto;
+    text-align: center;   
+}
+form fieldset p{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: 0.7rem auto;
+}
+form fieldset p:last-child{
+    width: 50rem;
+}
+form fieldset p textarea{
+    width: 85%;
+}
 
 
 /* ==========================================================================

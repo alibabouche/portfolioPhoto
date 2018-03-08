@@ -18,50 +18,56 @@
                 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <?php include "connectionPDO.php" ?>
-        
-        <header>
-        <h1>Ali Kh</h1>
-        <nav>
-            <ul>
-                <li class="Portraits">Portraits</li>
-                <li class="Paysages">Paysages</li>
-                <li class="Animaux">Animaux</li>
-            </ul>
-        </nav>
-        </header>
-        <main>
-            <section id="slider">
-                <div class="slider slider-portraits">
-                    <?php 
-                        foreach($resultPortraits as $resultsPortraits)
-                        {
-                            echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
-                        }?>
-                        </div>
-                <div class="slider slider-paysages">
-                    <?php 
-                        foreach($resultPaysages as $resultsPaysages)
-                        {
-                            echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
-                        }
-                    ?>
-                        </div>
-                <div class="slider slider-animaux">
-                    <?php
-                        foreach($resultAnimaux as $resultsAnimaux)
-                        {
-                            echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
-                        }
-                    ?>
-                </div>
-            </section>
-        </main>
+            <div class="container">
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <?php include "connectionPDO.php" ?>
+            
+            <header>
+            <h1><a href="./">Ali Kh</a></h1>
+            <nav>
+                <ul>
+                    <li class="Portraits">Portraits</li>
+                    <li class="Paysages">Paysages</li>
+                    <li class="Animaux">Animaux</li>
+                </ul>
+            </nav>
+            </header>
+            <main>
+                <section id="slider">
+                    <div class="slider slider-portraits">
+                        <?php 
+                            foreach($resultPortraits as $resultsPortraits)
+                            {
+                                echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
+                            }?>
+                            </div>
+                    <div class="slider slider-paysages">
+                        <?php 
+                            foreach($resultPaysages as $resultsPaysages)
+                            {
+                                echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
+                            }
+                        ?>
+                            </div>
+                    <div class="slider slider-animaux">
+                        <?php
+                            foreach($resultAnimaux as $resultsAnimaux)
+                            {
+                                echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
+                            }
+                        ?>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href="contact.php" class="contact">Contactez-moi</a>
+            </footer>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
