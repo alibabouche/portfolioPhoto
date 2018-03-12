@@ -67,10 +67,11 @@ textarea {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: #0e64ea;
+}
 h1{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poiret One', cursive;
     text-align: center;
     margin-top: 0;
 }
@@ -99,8 +100,8 @@ a{
     text-decoration: none;
 }
 header{
-    background-color: #0e64ea;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 h1 + nav ul{
     position: relative;
@@ -180,7 +181,8 @@ form fieldset p.textarea{
     width: 30rem;
 }
 form fieldset p textarea{
-    height: 10rem;
+    height: 15rem;
+    width: 20rem;
 }
 form fieldset p input[type="submit"]{
     margin: 0 auto;
@@ -188,19 +190,29 @@ form fieldset p input[type="submit"]{
 .footer{
     position: absolute;
     bottom: 0rem;
-    height: 5rem;
+    height: 8rem;
     width: 100%;
-    background-color: #0e64ea;
+    background-color: #163466;
     font-family: "Roboto", "Sans-Serif";
     font-weight: bold;
 }
 .footer a{
-    color: #001b47;
-    line-height: 5rem;
+    line-height: 8rem;
 }
 .footer a:hover{
     transition: ease 0.5s;
     color: #fff;
+}
+.iconsFooter{
+    color: #0e64ea;
+    font-size: 2rem;
+}
+.iconsFooter:hover,
+.iconsFooter:focus,
+.iconsFooter:active{
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: #e0ebfc;
 }
 
 /* ==========================================================================

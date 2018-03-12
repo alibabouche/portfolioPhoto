@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">               
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Poiret+One" rel="stylesheet">               
         <link rel="stylesheet" href="css/main.css">
 
         <!-- SLICK css -->
@@ -29,7 +29,7 @@
             <?php include "connectionPDO.php" ?>
             
             <header>
-            <h1><a href="./">Ali Kh</a></h1>
+            <h1><a href="./">Ali Kheroua</a></h1>
             <nav>
                 <ul>
                     <li class="Portraits">Portraits</li>
@@ -67,7 +67,12 @@
             </main>
             <footer>
                 <div class="footer">
-                    <a href="contact.phtml" class="contact">Contactez-moi</a>
+                    <ul>
+                        <li><a href="contact.phtml"  title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
+                        <li><a href="https://www.flickr.com/photos/137867147@N07/" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
+                    </ul>
+                    
                 </div>
             </footer>
         </div>
