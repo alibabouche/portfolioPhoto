@@ -9,13 +9,14 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">               
         <link rel="stylesheet" href="css/main.css">
 
         <!-- SLICK css -->
         
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-                
+
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -65,7 +66,9 @@
                 </section>
             </main>
             <footer>
-                <a href="contact.php" class="contact">Contactez-moi</a>
+                <div class="footer">
+                    <a href="contact.phtml" class="contact">Contactez-moi</a>
+                </div>
             </footer>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

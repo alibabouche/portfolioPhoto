@@ -6,8 +6,8 @@ $(document).ready(function(){
 		$(".slider-portraits").css("display", "block").slick({
 			infinite : true,
 			fade : true,
-			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
-			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
+			nextArrow : '<button class="sliderButton right"><i class="fas fa-angle-up"></i></i></button>',
+			prevArrow : '<button class="sliderButton left"><i class="fas fa-angle-up"></i></i></button>'
 		});
 	});
 
@@ -17,8 +17,8 @@ $(document).ready(function(){
 		$(".slider-paysages").css("display", "block").slick({
 			infinite : true,
 			fade : true,
-			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
-			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
+			nextArrow : '<button class="sliderButton right"><i class="fas fa-angle-up"></i></i></button>',
+			prevArrow : '<button class="sliderButton left"><i class="fas fa-angle-up"></i></i></button>'
 		});
 	});
 
@@ -28,8 +28,8 @@ $(document).ready(function(){
 		$(".slider-animaux").css("display", "block").slick({
 			infinite : true,
 			fade : true,
-			nextArrow : '<button class="right"><i class="fas fa-chevron-circle-up"></i></button>',
-			prevArrow : '<button class="left"><i class="fas fa-chevron-circle-up"></i></button>'
+			nextArrow : '<button class="sliderButton right"><i class="fas fa-angle-up"></i></i></button>',
+			prevArrow : '<button class="sliderButton left"><i class="fas fa-angle-up"></i></i></button>'
 		});
 	});
 });
