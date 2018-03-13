@@ -8,7 +8,7 @@ $(document).ready(function(){
 			fade : true,
 			nextArrow : '<button class="sliderButton right"><i class="fas fa-angle-up"></i></i></button>',
 			prevArrow : '<button class="sliderButton left"><i class="fas fa-angle-up"></i></i></button>'
-		});
+		});	
 	});
 
 	$(".Paysages").on("click", function(){

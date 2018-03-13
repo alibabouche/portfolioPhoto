@@ -5,6 +5,9 @@
 	$header.='Content-Type:text/html; charset="uft-8"'."\n";
 	$header.='Content-Transfer-Encoding: 8bit';
 
+	$beginHtml = "<html><body style='background-color: #0e64ea;'><p>";
+	$endHtml = "</p></body></html>";
+
 	if(!empty($_POST["lastName"]) && !empty($_POST["firstName"]) && !empty($_POST["message"]))
 	{			
 		if(isset($_POST["email"]))
@@ -23,17 +26,17 @@
 						mail("kheroua.s@gmail.com", "Portfolio Photo", $message, $header);	
 						Header("Location: ./");
 					}else{
-						echo "Merci de confirmer la même adresse email";
+						echo $beginHtml."Merci de confirmer la même adresse email".$endHtml;
 					}						
 				}else{
-					echo "Merci de confirmer votre adresse email";
+					echo $beginHtml."Merci de confirmer ton adresse email".$endHtml;
 				}				
 			}else{
-				echo "Merci d'entrer une adresse mail valide";
+				echo $beginHtml."Merci d'entrer une adresse mail valide".$endHtml;
 			}			
 		}
 	}else{
-		echo "Merci de renseigner tout les champs requis.";
+		echo $beginHtml."Merci de renseigner tout les champs requis.".$endHtml;
 	}
 	
 

@@ -65,17 +65,16 @@ textarea {
 }
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: #0e64ea;
 }
 h1{
-    font-family: 'Poiret One', cursive;
     text-align: center;
-    margin-top: 0;
 }
 h1 a{
+    font-family: 'Sacramento',  cursive;
+    font-size: 2.5rem;
     color: #001b47;
 }
 h1 a:hover,
@@ -93,7 +92,6 @@ ul{
     justify-content: center;
 }
 li{
-    float: left;
     padding: 0 2rem;
 }
 a{
@@ -105,10 +103,12 @@ header{
 }
 h1 + nav ul{
     position: relative;
+    font-family:  'Sacramento', cursive;
 }
 h1 + nav ul li{
-    text-transform: uppercase;
     font-weight: bold;
+    font-size: 2rem;
+    position: relative;
 }
 h1 + nav ul li:hover,
 h1 + nav ul li:active,
@@ -121,10 +121,11 @@ h1 + nav ul li::after{
     content: "";
     display: block;
     position: absolute;
+    left: 1.7rem;
     height: 0.2rem;
-    width: 6rem;
+    width: 8rem;
     z-index: 100;
-    text-align: center;
+    margin: 0 auto;
 }
 h1 + nav ul li:hover::after,
 h1 + nav ul li:active::after,
@@ -135,7 +136,7 @@ h1 + nav ul li:focus::after{
 }
 .img{
     display: none;
-    margin: 1rem auto;
+    margin: 2rem auto;
     box-shadow: 0px 0px 10px black;
 }
 .right{
@@ -163,38 +164,45 @@ h1 + nav ul li:focus::after{
     bottom: 0;
 }
 form{
-    text-align: center;
-}
-form fieldset{
-    text-align: center;
+    text-align: left;
 }
 form fieldset legend{
     visibility: hidden; 
 }
 form fieldset p{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 30rem;
     margin: 0.7rem auto;
 }
+form fieldset p label{
+    font-size: 1.1rem;
+    font-family: "Roboto", "Sans-Serif";
+    font-weight: normal;
+}
 form fieldset p.textarea{
-    width: 30rem;
+    font-family: "Roboto", "Sans-Serif";
+    font-weight: normal;
 }
 form fieldset p textarea{
     height: 15rem;
-    width: 20rem;
 }
 form fieldset p input[type="submit"]{
     margin: 0 auto;
+    font-family: "Roboto", "Sans-Serif";
+}
+small p,
+input[type="submit"]{
+    font-family: "Roboto", "Sans-Serif"; 
+    font-weight: normal;
 }
 .footer{
-    position: absolute;
+    position: fixed;
+    z-index: 2000;
     bottom: 0rem;
     height: 8rem;
     width: 100%;
     background-color: #163466;
-    font-family: "Roboto", "Sans-Serif";
-    font-weight: bold;
 }
 .footer a{
     line-height: 8rem;

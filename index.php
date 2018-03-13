@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Poiret+One" rel="stylesheet">               
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Poiret+One|Sacramento" rel="stylesheet">               
         <link rel="stylesheet" href="css/main.css">
 
         <!-- SLICK css -->
@@ -64,6 +64,7 @@
                         ?>
                     </div>
                 </section>
+                
             </main>
             <footer>
                 <div class="footer">
@@ -71,6 +72,7 @@
                         <li><a href="contact.phtml"  title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
                         <li><a href="https://www.flickr.com/photos/137867147@N07/" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
+                        <li><a href="https://www.instagram.com/alibabouche/" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
                     </ul>
                     
                 </div>
