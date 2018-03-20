@@ -32,4 +32,9 @@ $(document).ready(function(){
 			prevArrow : '<button class="sliderButton left"><i class="fas fa-angle-up"></i></i></button>'
 		});
 	});
+
+	$("h1 + nav ul li").on("click",function(){
+		$(".bio").css("display", "none");
+		$(".footer").css("position", "static")
+	});	
 });

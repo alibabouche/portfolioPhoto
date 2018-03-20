@@ -39,6 +39,12 @@
             </nav>
             </header>
             <main>
+                <section>
+                    <p class="bio"><img src="img/bio.jpg" alt="Ali Kheroua" />Dans la photographie depuis quelques années, sorties en pleine nature, <br/>
+                        Capturer des moments uniques, des rires, des interrogations des grimaces et les transformer en souvenirs, j'adore !<br/>
+                        Alors si une séance photo vous tente, en hurbex ou en ville, dans un salon ou dans une piscine abandonnée, je vous propose de mon temps avec joie.<br />
+                        </p>
+                </section>
                 <section id="slider">
                     <div class="slider slider-portraits">
                         <?php 
@@ -69,7 +75,7 @@
             <footer>
                 <div class="footer">
                     <ul>
-                        <li><a href="contact.phtml"  title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
+                        <li><a href="contact.phtml"  class="contactLink" title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
                         <li><a href="https://www.flickr.com/photos/137867147@N07/" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
                         <li><a href="https://www.instagram.com/alibabouche/" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
