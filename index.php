@@ -26,7 +26,7 @@
             <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            <?php include "connectionPDO.php" ?>
+            <?php include "connectionPDO.php"; ?>
             
             <header>
             <h1><a href="./">Ali Kheroua</a></h1>
@@ -61,7 +61,7 @@
                         <?php 
                             foreach($resultPortraits as $resultsPortraits)
                             {
-                                echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
+                                echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["ALTERNATIF"]."'/></div>");
                             }
                         ?>
                     </div>
@@ -69,7 +69,7 @@
                         <?php 
                             foreach($resultPaysages as $resultsPaysages)
                             {
-                                echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
+                                echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["ALTERNATIF"]."'/></div>");
                             }
                         ?>
                     </div>
@@ -77,7 +77,7 @@
                         <?php
                             foreach($resultAnimaux as $resultsAnimaux)
                             {
-                                echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["DESCRIPTION"]."'/></div>");
+                                echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["ALTERNATIF"]."'/></div>");
                             }
                         ?>
                     </div>

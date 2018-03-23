@@ -1,6 +1,4 @@
 <?php
-
-	// traitement PHP
     
     //	Connexion à la base de données
 	$pdo = new PDO
@@ -12,16 +10,16 @@
 	        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC// par defaut lors du fetchAll
 	    ]);
 
-	$queryPortraits = $pdo->prepare("SELECT * FROM portraits");
+	$queryPortraits = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'portrait'");
 	$queryPortraits->execute();
 	$resultPortraits = $queryPortraits->fetchAll(PDO::FETCH_ASSOC);
 
-	$queryPaysages = $pdo->prepare("SELECT * FROM paysages");
+	$queryPaysages = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'paysage'");
 	$queryPaysages->execute();
 	$resultPaysages = $queryPaysages->fetchAll(PDO::FETCH_ASSOC);
 
-	$queryAnimaux = $pdo->prepare("SELECT * FROM animaux");
+	$queryAnimaux = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'animaux'");
 	$queryAnimaux->execute();
 	$resultAnimaux = $queryAnimaux->fetchAll(PDO::FETCH_ASSOC);
 
-	$pdo = null;
+

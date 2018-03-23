@@ -136,13 +136,14 @@ h1 + nav ul li:focus::after{
     background-color: white;
 }
 .bio{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     color: #fff;
     font-family: "Montserrat", sans-serif;
 }
 .bio img{
-    width: 12rem;
+    min-width: 5rem;
+    width: 30%;
     float: left;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
