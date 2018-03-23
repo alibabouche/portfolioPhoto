@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$(".Portraits").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgPortraits").css({"height" : "600px", "display" : "block"});
+		$(".imgPortraits").css({"display" : "block", "position" : "relative"});
 		$(".slider-portraits").fadeIn(1000).slick({
 			infinite : true,
 			fade : true,
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	$(".Paysages").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgPaysages").css({"height" : "600px", "display" : "block"});
+		$(".imgPaysages").css({"display" : "block", "position" : "relative"});
 		$(".slider-paysages").fadeIn(1000).slick({
 			infinite : true,
 			fade : true,
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$(".Animaux").on("click", function(){
 		$(".img, .slider").css("display", "none");
-		$(".imgAnimaux").css({"height" : "600px", "display" : "block"});
+		$(".imgAnimaux").css({"display" : "block"});
 		$(".slider-animaux").fadeIn(1000).slick({
 			infinite : true,
 			fade : true,

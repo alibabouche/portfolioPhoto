@@ -67,8 +67,9 @@ textarea {
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    background-image: linear-gradient(60deg,#163466,#0e64ea);
+    /*background-image: linear-gradient(60deg,#163466,#0e64ea);*/
+    background-color: #0e64ea;
+    overflow: hidden;
 }
 h1{
     text-align: center;
@@ -103,7 +104,6 @@ header{
     margin-bottom: 1rem;
 }
 h1 + nav ul{
-    position: relative;
     font-family:  'Sacramento', cursive;
 }
 h1 + nav ul li{
@@ -122,9 +122,9 @@ h1 + nav ul li::after{
     content: "";
     display: block;
     position: absolute;
-    left: 1.7rem;
+    left: 0rem;
     height: 0.2rem;
-    width: 8rem;
+    width: 100%;
     z-index: 100;
     margin: 0 auto;
 }
@@ -136,9 +136,10 @@ h1 + nav ul li:focus::after{
     background-color: white;
 }
 .bio{
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 .bio img{
     width: 12rem;
@@ -152,11 +153,13 @@ h1 + nav ul li:focus::after{
     display: block;
     height: 0px;
     text-indent: 100000px;
+    clear: left;
 }
 .img{
     display: none;
-    margin: 2rem auto;
+    margin: 0 auto;
     box-shadow: 0px 0px 7px #163466;
+    height: 600px;
 }
 .right{
     position: absolute;
@@ -221,14 +224,13 @@ input[type="submit"]{
     font-family: "Roboto", "Sans-Serif"; 
     font-weight: normal;
 }
-.footer{
+footer{
     position: fixed;
     z-index: 2000;
     bottom: 0rem;
     height: 8rem;
     width: 100%;
     background-color: #163466;
-    margin-top: 2rem;
 }
 .footer a{
     line-height: 8rem;
@@ -253,8 +255,24 @@ input[type="submit"]{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media screen and (max-width: 700px) {
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    h1 + nav ul li:hover::after,
+    h1 + nav ul li:active::after,
+    h1 + nav ul li:focus::after{
+        margin: 0 auto;
+    }
+    ul.ulFooter {
+        flex-direction: row;
+    }.img{
+        height: 250px;
+    }
+    p{
+        color: red;
+    }
 }
 
 @media print,

@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Ali Kheroua Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Poiret+One|Sacramento" rel="stylesheet">               
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Sacramento|Montserrat" rel="stylesheet">               
         <link rel="stylesheet" href="css/main.css">
 
         <!-- SLICK css -->
@@ -22,7 +22,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     </head>
     <body>
-            <div class="container">
+        <div class="container">
             <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -40,10 +40,21 @@
             </header>
             <main>
                 <section>
-                    <p class="bio"><img src="img/bio.jpg" alt="Ali Kheroua" />Dans la photographie depuis quelques années, sorties en pleine nature, <br/>
-                        Capturer des moments uniques, des rires, des interrogations des grimaces et les transformer en souvenirs, j'adore !<br/>
-                        Alors si une séance photo vous tente, en hurbex ou en ville, dans un salon ou dans une piscine abandonnée, je vous propose de mon temps avec joie.<br />
-                        </p>
+                    <p class="bio"><img src="img/bio.jpg" alt="Ali Kheroua" />Dans la photographie depuis quelques années, avec ma boite à images toujours prête à être dégainée. 
+                        <br/>
+                        <br/>
+                    Capturer des moments uniques, des rires, des interrogations des grimaces et les transformer en souvenirs, j'adore !
+                        <br/>
+                        <br/>
+                    Un anniversaire, un mariage, ou plus simplement une soirée mémorable méritent qu'on puis s'en souvenir longtemps.
+                    <br/>
+                    <br/>
+                        Ici on est ouvert, il n'y à plus qu'à shooter et s'amuser.
+                        Alors si une séance photo vous tente, en hurbex ou en ville, dans un salon ou dans une piscine abandonnée, en couple ou en solo, des enfants ou des grands sages, je vous propose de mon temps avec joie.
+                        <br/>
+                        <br />
+                    J'ai hâte de vous rencontrez !
+                    </p>
                 </section>
                 <section id="slider">
                     <div class="slider slider-portraits">
@@ -51,8 +62,9 @@
                             foreach($resultPortraits as $resultsPortraits)
                             {
                                 echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["DESCRIPTION"]."'/></div>");
-                            }?>
-                            </div>
+                            }
+                        ?>
+                    </div>
                     <div class="slider slider-paysages">
                         <?php 
                             foreach($resultPaysages as $resultsPaysages)
@@ -60,7 +72,7 @@
                                 echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["DESCRIPTION"]."'/></div>");
                             }
                         ?>
-                            </div>
+                    </div>
                     <div class="slider slider-animaux">
                         <?php
                             foreach($resultAnimaux as $resultsAnimaux)
@@ -70,15 +82,14 @@
                         ?>
                     </div>
                 </section>
-                
             </main>
             <footer>
                 <div class="footer">
-                    <ul>
-                        <li><a href="contact.phtml"  class="contactLink" title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
-                        <li><a href="https://www.flickr.com/photos/137867147@N07/" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
-                        <li><a href="https://www.instagram.com/alibabouche/" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
+                    <ul class="ulFooter">
+                        <li><a href="contact.phtml" class="contactLink" title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
+                        <li><a href="https://www.flickr.com/photos/137867147@N07/" target="blank" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" target="blank" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
+                        <li><a href="https://www.instagram.com/alibabouche/" target="blank" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
                     </ul>
                     
                 </div>
