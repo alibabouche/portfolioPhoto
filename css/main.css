@@ -230,12 +230,8 @@ table{
     width: 40rem;
     text-align: center;
 }
-table tr:hover{
-    transition: 0.7s ease;
-    background-color: #0a58d1;
-}
 table tr:first-child:hover{
-
+background-color: #0e64ea!important;
 }
 table tr td:nth-child(2){
     text-align: left;

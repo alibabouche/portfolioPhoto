@@ -38,4 +38,16 @@ $(document).ready(function(){
 		$(".footer").css("position", "static")
 	});	
 
+	$("table tr").on("mouseenter", function(){
+		$(this).css({
+	    "transition": "0.5s ease",
+	    "background-color": "#0a58d1"
+		});
+	});
+	$("table tr").on("mouseout", function(){
+		$(this).css({
+	    "transition": "0.5s ease",
+	    "background-color": "#0e64ea"
+		});	
+	});
 });
