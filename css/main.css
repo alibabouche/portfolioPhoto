@@ -225,6 +225,24 @@ input[type="submit"]{
     font-family: "Roboto", "Sans-Serif"; 
     font-weight: normal;
 }
+table{
+    margin: 0 auto;
+    width: 40rem;
+    text-align: center;
+}
+table tr:hover{
+    transition: 0.7s ease;
+    background-color: #0a58d1;
+}
+table tr:first-child:hover{
+
+}
+table tr td:nth-child(2){
+    text-align: left;
+}
+table td img{
+    width: 3rem;
+}
 footer{
     position: fixed;
     z-index: 2000;
@@ -232,9 +250,6 @@ footer{
     height: 8rem;
     width: 100%;
     background-color: #163466;
-}
-table td img{
-    width: 3rem;
 }
 .footer a{
     line-height: 8rem;
