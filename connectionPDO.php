@@ -23,8 +23,10 @@
 	$resultAnimaux = $queryAnimaux->fetchAll(PDO::FETCH_ASSOC);
 
 	
-
-
+	// on sélectionne la table complète
+	$queryPhoto = $pdo->prepare("SELECT * FROM photos");
+	$queryPhoto->execute();
+	$resultPhoto = $queryPhoto->fetchAll(PDO::FETCH_ASSOC);
 	
 
 

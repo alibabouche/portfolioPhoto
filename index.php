@@ -28,6 +28,7 @@
             <![endif]-->
             <?php include "connectionPDO.php"; ?>
             
+            <a href="adminPage.php">Admin</a>
             <header>
             <h1><a href="./">Ali Kheroua</a></h1>
             <nav>
@@ -58,6 +59,7 @@
                 </section>
                 <section id="slider">
                     <div class="slider slider-portraits">
+
                         <?php 
                             foreach($resultPortraits as $resultsPortraits)
                             {

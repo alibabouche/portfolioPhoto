@@ -233,6 +233,9 @@ footer{
     width: 100%;
     background-color: #163466;
 }
+table td img{
+    width: 3rem;
+}
 .footer a{
     line-height: 8rem;
 }
