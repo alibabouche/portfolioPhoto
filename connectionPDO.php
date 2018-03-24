@@ -22,4 +22,10 @@
 	$queryAnimaux->execute();
 	$resultAnimaux = $queryAnimaux->fetchAll(PDO::FETCH_ASSOC);
 
+	
+
+
+	
+
+
 

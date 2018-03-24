@@ -37,4 +37,5 @@ $(document).ready(function(){
 		$(".bio").css("display", "none");
 		$(".footer").css("position", "static")
 	});	
+
 });

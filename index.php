@@ -61,7 +61,7 @@
                         <?php 
                             foreach($resultPortraits as $resultsPortraits)
                             {
-                                echo ("<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["ALTERNATIF"]."'/></div>");
+                                echo "<div><img class='img imgPortraits' src='".$resultsPortraits["PATH"]."' alt='".$resultsPortraits["ALTERNATIF"]."'/></div>";
                             }
                         ?>
                     </div>
@@ -69,7 +69,7 @@
                         <?php 
                             foreach($resultPaysages as $resultsPaysages)
                             {
-                                echo ("<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["ALTERNATIF"]."'/></div>");
+                                echo "<div><img class='img imgPaysages' src='".$resultsPaysages["PATH"]."' alt='".$resultsPaysages["ALTERNATIF"]."'/></div>";
                             }
                         ?>
                     </div>
@@ -77,7 +77,7 @@
                         <?php
                             foreach($resultAnimaux as $resultsAnimaux)
                             {
-                                echo ("<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["ALTERNATIF"]."'/></div>");
+                                echo "<div><img class='img imgAnimaux' src='".$resultsAnimaux["PATH"]."' alt='".$resultsAnimaux["ALTERNATIF"]."'/></div>";
                             }
                         ?>
                     </div>
