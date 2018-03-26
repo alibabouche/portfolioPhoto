@@ -10,24 +10,42 @@
 	        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC// par defaut lors du fetchAll
 	    ]);
 
-	$queryPortraits = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'portrait'");
-	$queryPortraits->execute();
-	$resultPortraits = $queryPortraits->fetchAll(PDO::FETCH_ASSOC);
+	//sélection de
+	$queryPhotoCategory = $pdo->prepare("SELECT * FROM photos");
+	$queryPhotoCategory->execute();
+	$resultPhotoCategory = $queryPhotoCategory->fetchAll(PDO::FETCH_ASSOC);
 
-	$queryPaysages = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'paysage'");
+	/*$queryPaysages = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'paysage'");
 	$queryPaysages->execute();
 	$resultPaysages = $queryPaysages->fetchAll(PDO::FETCH_ASSOC);
 
 	$queryAnimaux = $pdo->prepare("SELECT * FROM photos WHERE CATEGORY = 'animaux'");
 	$queryAnimaux->execute();
 	$resultAnimaux = $queryAnimaux->fetchAll(PDO::FETCH_ASSOC);
-
+*/
 	
-	// on sélectionne la table complète
+	//Sélection de la table complète
 	$queryPhoto = $pdo->prepare("SELECT * FROM photos");
 	$queryPhoto->execute();
 	$resultPhoto = $queryPhoto->fetchAll(PDO::FETCH_ASSOC);
 	
+
+	//pour supression des photos...
+	if(isset($_POST["idPhoto"]))
+	{
+		//...des dossiers serveur
+		$idPhoto = $_POST["idPhoto"];
+		$queryDeletePhotoFile = $pdo->prepare("SELECT `PATH` FROM photos WHERE ? =ID_PHOTO");
+		$queryDeletePhotoFile->execute([$idPhoto]);
+		$resultDeletePhotoFile = $queryDeletePhotoFile->fetch(PDO::FETCH_ASSOC);
+
+		unlink("./".$resultDeletePhotoFile["PATH"]);
+
+		//...de la BDD		
+		$queryDeletePhoto = $pdo->prepare("DELETE FROM photos WHERE ? = ID_PHOTO");
+		$queryDeletePhoto->execute([$idPhoto]);
+
+	}
 
 
 

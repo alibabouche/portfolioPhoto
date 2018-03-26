@@ -54,8 +54,8 @@
                                 <input type="text" name="photoAlt" id="photoAlt" required>
                             </p>
                             <p>
-                                <label for="photoFile">Fichier (pas plus de 2Mo)*</label>
-                                <input type="hidden" name="maxFileSize" value="2097152">
+                                <label for="photoFile">Fichier (pas plus de 4Mo)*</label>
+                                <input type="hidden" name="maxFileSize" value="40960000">
                                 <input type="file" name="photoFile" accept =".jpg, .jpeg, .png" id="photoFile" required>
                             </p>
                             <p>
@@ -79,7 +79,7 @@
                                 echo "<td>".$resultPhotos["CATEGORY"]."</td>";
                                 echo "<td>".$resultPhotos["ALTERNATIF"]."</td>";
                                 echo "<td><img src='".$resultPhotos["PATH"]."' alt='".$resultPhotos["ALTERNATIF"]."'/></td>";
-                                echo "<td><i class='far fa-trash-alt'></i></td>"; ?>
+                                echo "<td data-id='".$resultPhotos["ID_PHOTO"]."'><i class='far fa-trash-alt trash'></i></td>"; ?>
                             </tr>
                         <?php endforeach ?>                   
                     </table>
@@ -92,16 +92,6 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
 
         <!-- SLICK plugin-->
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
