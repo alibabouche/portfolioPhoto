@@ -26,8 +26,10 @@
             <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            <?php include "connectionPDO.php"; ?>
-            
+            <?php 
+                include "connectionPDO.php";
+                session_start(); 
+            ?>
             <header>
             <h1><a href="./">Ali Kheroua</a></h1>
             <nav>
@@ -101,7 +103,20 @@
                         <li><a href="https://www.flickr.com/photos/137867147@N07/" target="blank" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" target="blank" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
                         <li><a href="https://www.instagram.com/alibabouche/" target="blank" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
-                        <li><a href="adminPage.php" target="blank" title="Admin User"><i class="fas fa-user iconsFooter"></i></a></li>
+                        <?php if(isset($_SESSION["connection"]))
+                            {
+                                if($_SESSION["connection"])
+                                {
+                                    echo "<li><a href='adminPage.php' title='Admin User'><i class='fas fa-user iconsFooter'></i></a></li>
+                                    <li><a href='killSession.php' title='decconexion Admin'><i class='fas fa-times iconsFooter'></i></a></li>
+                                    "; 
+                                }else{
+                                    echo "<li><a href='adminLog.php' title='Admin User'><i class='fas fa-user iconsFooter'></i></a></li>";
+                                }
+                            }else{
+                                echo "<li><a href='adminLog.php' title='Admin User'><i class='fas fa-user iconsFooter'></i></a></li>";
+                            }                            
+                        ?>
                     </ul>
                     
                 </div>
