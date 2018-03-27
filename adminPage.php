@@ -108,6 +108,18 @@
                     <?php endif ?>   
                 <?php endif ?>        
             </main>
+            <footer>
+                <div class="footer">
+                    <ul>
+                        <li><a href="contactPage.php"  title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
+                        <li><a href="https://www.flickr.com/photos/137867147@N07/" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
+                        <li><a href="https://www.instagram.com/alibabouche/" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
+                        <li><a href="adminPage.php" target="blank" title="Admin User"><i class="fas fa-user iconsFooter"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </footer>
 
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

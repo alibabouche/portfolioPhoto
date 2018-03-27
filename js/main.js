@@ -2,6 +2,37 @@ $(document).ready(function(){
 
 	var idPhoto;
 
+	//animation à l'affichage de la page index.php
+	//de la bio...
+	$(".bio").hide().fadeIn(2000, "linear");
+
+	//de la nav...
+	//en initial
+	$("nav ul li:first-child").css({
+		"transform": "translateX(-15rem)",
+		"opacity": 0
+	});
+	$("nav ul li:last-child").css({
+		"transform": "translateX(15rem)",
+		"opacity": 0
+	});
+	$("nav ul li:nth-child(2)").hide().fadeIn(2000);
+
+	//puis en fin...
+	$("nav ul li:first-child").css({
+		"transition": '2s ease',
+		"transform": "translateX(0rem)",
+		"opacity": 1
+	})
+	$("nav ul li:last-child").css({
+		"transition": '2s ease',
+		"transform": "translateX(0rem)",
+		"opacity": 1
+	})
+
+	//animation à l'affichage de la page contact.php
+	$("main").hide().fadeIn(2000)
+
 	//slider slick portraits
 	$(".Portraits").on("click", function(){
 		$(".img, .slider").css("display", "none");
@@ -74,5 +105,4 @@ $(document).ready(function(){
 			}
 		});	
 	});
-
 });

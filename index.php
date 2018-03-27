@@ -97,7 +97,7 @@
             <footer>
                 <div class="footer">
                     <ul class="ulFooter">
-                        <li><a href="contact.phtml" class="contactLink" title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
+                        <li><a href="contactPage.php" class="contactLink" title="Contact"><i class="fas fa-comments iconsFooter"></i></a></li>
                         <li><a href="https://www.flickr.com/photos/137867147@N07/" target="blank" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" target="blank" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
                         <li><a href="https://www.instagram.com/alibabouche/" target="blank" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>

@@ -137,12 +137,12 @@ h1 + nav ul li:focus::after{
 }
 .bio{
     width: 40%;
-    margin: 0 auto;
+    margin: 7rem auto;
     color: #fff;
     font-family: "Montserrat", sans-serif;
 }
 .bio img{
-    min-width: 5rem;
+    min-width: rem;
     width: 30%;
     float: left;
     margin-right: 1rem;
@@ -181,12 +181,21 @@ h1 + nav ul li:focus::after{
     border: none;
     color: black;
     font-size: 2rem;
+    position: absolute;
 }
 .sliderButton:hover,
 .sliderButton:active{
     transition: 0.2s ease;
     background-color: rgba(218, 225, 237, 0.4);
     border-radius: 50%;
+}
+button.sliderButton.right.slick-arrow{
+    position: absolute;
+    right: 4px;
+}
+button.sliderButton.left.slick-arrow{
+    position: absolute;
+    left: 4px;
 }
 .contact{
     position: fixed;
