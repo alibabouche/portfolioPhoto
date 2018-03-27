@@ -28,7 +28,6 @@
             <![endif]-->
             <?php include "connectionPDO.php"; ?>
             
-            <a href="adminPage.php">Admin</a>
             <header>
             <h1><a href="./">Ali Kheroua</a></h1>
             <nav>
@@ -102,6 +101,7 @@
                         <li><a href="https://www.flickr.com/photos/137867147@N07/" target="blank" title="flickr"><i class="fab fa-flickr iconsFooter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/ali-kheroua-12061014b" target="blank" title="linkedin"><i class="fab fa-linkedin iconsFooter"></i></a></li>
                         <li><a href="https://www.instagram.com/alibabouche/" target="blank" title="instagram"><i class="fab fa-instagram iconsFooter"></i></a></li>
+                        <li><a href="adminPage.php" target="blank" title="Admin User"><i class="fas fa-user iconsFooter"></i></a></li>
                     </ul>
                     
                 </div>
