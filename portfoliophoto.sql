@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Client :  127.0.0.1
--- Généré le :  Mer 07 Mars 2018 à 01:31
--- Version du serveur :  10.1.21-MariaDB
--- Version de PHP :  5.6.30
+-- Hôte : 127.0.0.1
+-- Généré le :  mar. 27 mars 2018 à 16:48
+-- Version du serveur :  10.1.30-MariaDB
+-- Version de PHP :  7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,110 +25,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `animaux`
+-- Structure de la table `photos`
 --
 
-CREATE TABLE `animaux` (
-  `ID_ANIMAUX` int(11) NOT NULL,
-  `PATH` varchar(50) NOT NULL,
-  `DESCRIPTION` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `photos` (
+  `ID_PHOTO` int(10) NOT NULL,
+  `CATEGORY` varchar(20) COLLATE utf8_bin NOT NULL,
+  `PATH` text COLLATE utf8_bin NOT NULL,
+  `ALTERNATIF` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Contenu de la table `animaux`
+-- Déchargement des données de la table `photos`
 --
 
-INSERT INTO `animaux` (`ID_ANIMAUX`, `PATH`, `DESCRIPTION`) VALUES
-(1, 'img/animaux/1.jpg', 'vol de corbeau'),
-(2, 'img/animaux/2.jpg', 'écureuils sur une branche'),
-(3, 'img/animaux/3.jpg 	', 'vol d\'oiseau noir à bec jaune'),
-(4, 'img/animaux/4.jpg 	', 'lapins aux aguets');
-
--- --------------------------------------------------------
+INSERT INTO `photos` (`ID_PHOTO`, `CATEGORY`, `PATH`, `ALTERNATIF`) VALUES
+(40, 'animaux', 'img/animaux/libellule.jpg', 'libellule sur une branche'),
+(41, 'animaux', 'img/animaux/Une mauvaise cuisinière.jpg', 'Une araignée en gros plan'),
+(42, 'animaux', 'img/animaux/Du sol au plafond.jpg', 'Une araignée noire, veulux et trapue');
 
 --
--- Structure de la table `paysages`
---
-
-CREATE TABLE `paysages` (
-  `ID_PAYSAGES` int(11) NOT NULL,
-  `PATH` varchar(50) NOT NULL,
-  `DESCRIPTION` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Contenu de la table `paysages`
---
-
-INSERT INTO `paysages` (`ID_PAYSAGES`, `PATH`, `DESCRIPTION`) VALUES
-(1, 'img/paysages/1.jpg', 'montagne au crépuscule'),
-(2, 'img/paysages/2.jpg', 'chemin aux arbres ennaigés'),
-(3, 'img/paysages/3.jpg', 'lune'),
-(4, 'img/paysages/4.jpg', 'éoliennes au crépuscule');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `portraits`
---
-
-CREATE TABLE `portraits` (
-  `ID_PORTRAITS` int(11) NOT NULL,
-  `PATH` varchar(50) NOT NULL,
-  `DESCRIPTION` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Contenu de la table `portraits`
---
-
-INSERT INTO `portraits` (`ID_PORTRAITS`, `PATH`, `DESCRIPTION`) VALUES
-(1, 'img/portraits/1.jpg', 'dimanche on brunch'),
-(2, 'img/portraits/2.jpg', 'color girl'),
-(3, 'img/portraits/3.jpg', 'maman ski'),
-(4, 'img/portraits/4.jpg', 'bonnet boy');
-
---
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `animaux`
+-- Index pour la table `photos`
 --
-ALTER TABLE `animaux`
-  ADD PRIMARY KEY (`ID_ANIMAUX`);
+ALTER TABLE `photos`
+  ADD PRIMARY KEY (`ID_PHOTO`);
 
 --
--- Index pour la table `paysages`
---
-ALTER TABLE `paysages`
-  ADD PRIMARY KEY (`ID_PAYSAGES`);
-
---
--- Index pour la table `portraits`
---
-ALTER TABLE `portraits`
-  ADD PRIMARY KEY (`ID_PORTRAITS`);
-
---
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `animaux`
+-- AUTO_INCREMENT pour la table `photos`
 --
-ALTER TABLE `animaux`
-  MODIFY `ID_ANIMAUX` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT pour la table `paysages`
---
-ALTER TABLE `paysages`
-  MODIFY `ID_PAYSAGES` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT pour la table `portraits`
---
-ALTER TABLE `portraits`
-  MODIFY `ID_PORTRAITS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `photos`
+  MODIFY `ID_PHOTO` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
